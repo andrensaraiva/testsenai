@@ -16,7 +16,7 @@
             return $this->id;
         }
 
-        public function getNOme() {
+        public function getName() {
             return $this->name;
         }
 
