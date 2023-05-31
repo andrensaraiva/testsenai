@@ -4,7 +4,7 @@
     $name = "Produto A";
     $price = 19.99;
 
-    $stmt = $db->prepare("INSERT IF produtos (nome, preco) VALUES (:nome, :preco)");
+    $stmt = $db->prepare("INSERT INTO produtos (nome, preco) VALUES (:nome, :preco)");
     $stmt->bindParam(':nome', $name);
     $stmt->bindParam(':preco', $price);
 
