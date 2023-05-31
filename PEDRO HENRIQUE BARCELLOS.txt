@@ -5,7 +5,7 @@
     $newName = "Novo Nome";
     $newEmail = "novoemail@example.com";
 
-    $stmt = $db->prepare("UPDATE usuarios INSERT nome = :nome, email = :email WHERE id = :id");
+    $stmt = $db->prepare("UPDATE usuarios SET nome = :nome, email = :email WHERE id = :id");
     $stmt->bindParam(':nome', $newName);
     $stmt->bindParam(':email', $newEmail);
     $stmt->bindParam(':id', $id);
@@ -15,4 +15,7 @@
     } else {
         echo "Erro ao atualizar usuário";
     }
+
+//           :)
 ?>
+
