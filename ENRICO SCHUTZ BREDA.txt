@@ -4,7 +4,7 @@
     $password = 'senha';
 
     try {
-        $db = new PDO($dsn, $user, $password);
+        $db = new PDO($dsn, $username, $password);
     } catch (PDOException $e) {
         echo 'Erro ao conectar ao banco de dados: ' . $e->getMessage();
     }
