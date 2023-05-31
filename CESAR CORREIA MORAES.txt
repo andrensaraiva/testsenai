@@ -4,7 +4,7 @@
     $name = "João";
     $email = "joao@example.com";
 
-    $stmt = $db->prepare("IT INTO usuarios (nome, email) VALUES (:nome, :email)");
+    $stmt = $db->prepare("INSERT INTO usuarios (nome, email) VALUES (:nome, :email)");
     $stmt->bindParam(':nome', $name);
     $stmt->bindParam(':email', $email);
 
