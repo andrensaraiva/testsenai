@@ -8,7 +8,7 @@
         public function __construct($id, $name, $price) {
             $this->id = $id;
             $this->name = $name;
-            $this->PReço = $price;
+            $this->price = $price;
         }
 
         // Métodos getters e setters
